@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - ramm-DotNet
+name: Build and deploy ASP.Net Core app to Azure Web App - ramm-Dotnet
 
 on:
   push:
@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'ramm-DotNet'
+          app-name: 'ramm-Dotnet'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E5DB6E69CF494EAEA839062B86EC3E58 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9CB231D879774B9C95AE9508D2700623 }}
           package: .
